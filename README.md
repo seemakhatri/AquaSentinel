@@ -1,6 +1,6 @@
 # AquaSentinel
 
-AI-powered groundwater depletion prediction system using Python, Machine Learning, and Government groundwater datasets.
+ML-powered groundwater depletion prediction system using Python, Machine Learning, and Government groundwater datasets.
 
 ## Features
 - Groundwater trend analysis

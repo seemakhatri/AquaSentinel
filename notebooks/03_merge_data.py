@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load datasets
-groundwater = pd.read_csv("../raw_data/groundwater_rajasthan.csv")
+groundwater = pd.read_csv("../raw_data/groundwater_rajasthan_clean.csv")
 rainfall = pd.read_csv("../raw_data/rainfall_rajasthan.csv")
 labels = pd.read_csv("../raw_data/cgwb_labels.csv")
 
@@ -12,14 +12,12 @@ merged = pd.merge(
     on=["District", "Year"]
 )
 
-# Rename column for matching
-merged["district"] = merged["District"]
 
 # Merge labels
 merged = pd.merge(
     merged,
     labels,
-    on="district"
+    on="District"
 )
 
 # Show merged data

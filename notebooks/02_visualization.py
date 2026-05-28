@@ -2,10 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load groundwater data
-df = pd.read_csv("../raw_data/groundwater_rajasthan.csv")
+df = pd.read_csv("../raw_data/groundwater_rajasthan_clean.csv")
 
 # Filter Ajmer only
 ajmer = df[df["District"] == "Ajmer"]
+jaisalmer = df[df["District"] == "Jaisalmer"]
 
 # Create graph
 plt.figure(figsize=(10,5))

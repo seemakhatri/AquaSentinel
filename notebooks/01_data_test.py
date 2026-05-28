@@ -1,6 +1,6 @@
 import pandas as pd
 
-groundwater = pd.read_csv("../raw_data/groundwater_rajasthan.csv")
+groundwater = pd.read_csv("../raw_data/groundwater_rajasthan_clean.csv")
 rainfall = pd.read_csv("../raw_data/rainfall_rajasthan.csv")
 
 print("Groundwater Data:")

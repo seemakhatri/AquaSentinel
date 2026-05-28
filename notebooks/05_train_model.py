@@ -30,6 +30,9 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Random Forest Model
 model = RandomForestClassifier(
     n_estimators=100,
+     max_depth=4,  
+         min_samples_split=5, 
+    min_samples_leaf=3,
     random_state=42
 )
 

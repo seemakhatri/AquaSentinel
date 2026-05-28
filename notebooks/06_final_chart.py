@@ -11,7 +11,8 @@ district_avg = df.groupby("District")["Depth_mbgl"].mean()
 plt.figure(figsize=(10,6))
 
 district_avg.plot(
-    kind="bar"
+    kind="bar",
+    color=['#2196F3','#F44336','#FF9800']
 )
 
 plt.title("Average Groundwater Depth by District")
